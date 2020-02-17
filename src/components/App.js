@@ -12,7 +12,8 @@ class App extends React.Component {
         Authorization: "Client-ID KE9QUrPyp-5Hc5GXE7Pf2E6vr_KDaf83qTLxoCovGGA"
       }
     });
-    console.log(response.data.results);
+
+    this.setState({ images: response.data.results });
   }
 
   render() {
